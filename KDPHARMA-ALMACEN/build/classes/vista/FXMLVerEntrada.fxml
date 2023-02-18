@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="1569.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.vista.FXMLVerEntradaController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="562.0" prefWidth="914.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="580.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#accionEditar" prefHeight="39.0" prefWidth="93.0" text="Editar" />
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#accionEliminar" prefHeight="39.0" prefWidth="104.0" text="Eliminar" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="1327.0">
+                     <children>
+                        <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#accionSalir" prefHeight="39.0" prefWidth="89.0" text="Salir" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <TableView fx:id="tbDatos" prefHeight="507.0" prefWidth="894.0">
+               <columns>
+                  <TableColumn fx:id="columnaCodigo" prefWidth="108.0" text="Codigo" />
+                  <TableColumn fx:id="columnaProducto" prefWidth="124.0" text="Producto" />
+                  <TableColumn fx:id="columnaCantidad" minWidth="0.0" prefWidth="117.0" text="Cantidad" />
+                  <TableColumn fx:id="columnaFechaEntrada" prefWidth="204.0" text="Fecha de entrada" />
+                  <TableColumn fx:id="columnaFechaVencimiento" prefWidth="202.0" text="Fecha de vencimiento" />
+                  <TableColumn fx:id="columnaCosto" minWidth="0.0" prefWidth="128.0" text="Costo Total" />
+                  <TableColumn fx:id="columnaGuia" minWidth="0.0" prefWidth="163.0" text="Guia de remision" />
+                  <TableColumn fx:id="columnaUsuario" minWidth="0.0" prefWidth="133.0" text="Usuario" />
+                  <TableColumn fx:id="columnaCaducar" minWidth="0.0" prefWidth="118.0" text="Por caducar" />
+                  <TableColumn fx:id="columnaObservaciones" minWidth="0.0" prefWidth="251.0" text="Observaciones" />
+               </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

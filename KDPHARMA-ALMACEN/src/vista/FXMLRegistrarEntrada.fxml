@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.vista.FXMLRegistrarEntradaController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="814.0" prefWidth="753.0" spacing="10.0">
+         <children>
+            <Label text="Registro de nueva entrada de producto" />
+            <GridPane alignment="CENTER" prefHeight="625.0" prefWidth="713.0">
+               <children>
+                  <Label text="Producto:" />
+                  <Label text="Cantidad:" GridPane.rowIndex="1" />
+                  <Label text="Fecha de entrada:" GridPane.rowIndex="2" />
+                  <Label text="Fecha de vencimiento:" GridPane.rowIndex="3" />
+                  <Label text="Guia de remision:" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtGuiaRemision" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Observaciones:" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="cbProductos" prefHeight="39.0" prefWidth="510.0" promptText="Seleccione el producto:" GridPane.columnIndex="1" />
+                  <DatePicker fx:id="dpEntrada" prefHeight="39.0" prefWidth="507.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="dpVencimiento" prefHeight="39.0" prefWidth="501.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextArea fx:id="taObservaciones" prefHeight="143.0" prefWidth="521.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtCantidad" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="192.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="521.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="80.0" minHeight="40.0" prefHeight="68.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="97.0" minHeight="0.0" prefHeight="62.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="79.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="76.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="79.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="203.0" minHeight="0.0" prefHeight="203.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#aacionGuardar" text="Guardar" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#accionCancelar" text="Cancelar" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

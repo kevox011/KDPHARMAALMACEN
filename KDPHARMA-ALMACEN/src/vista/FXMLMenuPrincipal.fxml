@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="839.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.vista.FXMLMenuPrincipalController">
+   <children>
+      <MenuBar fx:id="barraMenu">
+        <menus>
+          <Menu mnemonicParsing="false" text="Usuarios">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#accionCrearUsuario" text="Crear usuario" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionVerUsuario" text="Ver usuarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionSalir" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Productos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#accionCrearProducto" text="Crear producto" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionVerProducto" text="Ver productos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Registros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#accionCrearRegistroEntrada" text="Crear registro de entrada" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionCrearRegistroSalida" text="Crear registro de salida" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionVerRegistroEntrada" text="Ver registros de entrada" />
+                  <MenuItem mnemonicParsing="false" onAction="#accionVerRegistroSalida" text="Ver registros de salida" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" prefHeight="639.0" prefWidth="940.0">
+         <children>
+            <ImageView fx:id="ivImagen" fitHeight="251.0" fitWidth="662.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
